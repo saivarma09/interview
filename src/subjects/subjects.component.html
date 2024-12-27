@@ -1,0 +1,10 @@
+<div>
+{{data | json}}
+<button (click)="emitInfo()">emit</button>
+<button (click)="getData()">subject</button></div>
+<div>{{behaviorData | json}}
+<button (click)="emitBhInfo()"> Emit Behavior subject</button>
+<button (click)="getBehaviorData()">Behavior subject</button></div>
+<div>{{RData | json}}
+<button (click)="emitRInfo()"> Emit Replay subject</button>
+<button (click)="getRData()">Replay subject</button></div>
