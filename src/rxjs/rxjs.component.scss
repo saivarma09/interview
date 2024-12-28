@@ -1,0 +1,29 @@
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+    .container{
+        width: 30%;
+        height: 350px;
+        padding: 16px;
+        border: 1px solid #e8e8e8;
+        overflow: auto;
+    }
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    div{
+        text-align: center;
+    }
+}
+
+.label{
+font-size: 28px;
+}
+
+li{
+    cursor: pointer;
+}

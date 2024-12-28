@@ -1,0 +1,148 @@
+<div class="label">
+    RXJS operator are pre define functions. Operators are the essential pieces that allow complex asynchronous code to be easily composed in a declarative manner. There are two type of Operators
+    <ul>
+        <li>Creation <ul>
+            <li (click)="selectedRxjs = 'of'">of </li>
+            <li (click)="selectedRxjs = 'from'">from</li>
+            <li (click)="selectedRxjs = 'range'">Range</li>
+            <li (click)="selectedRxjs = 'interval'">interval</li>
+        </ul> </li>
+        <li>Pipeable <ul>
+            <li (click)="selectedRxjs = 'map'">Map </li>
+            <li (click)="selectedRxjs = 'switchMap'">SwitchMap </li>
+            <li (click)="selectedRxjs = 'debounce'">DebounceTime </li>
+            <li (click)="selectedRxjs = 'filter'">Filter </li>
+            <li (click)="selectedRxjs = 'find'">Find </li>
+            <li (click)="selectedRxjs = 'reduce'">Reduce </li>
+            <li (click)="selectedRxjs = 'contact'">Contact </li>
+        </ul> </li>
+    </ul>
+</div>
+
+
+<div class="main-container">
+    @if(selectedRxjs == "of"){
+    <div class="container">
+        <div class="label">Takes Inputs and loop one by one</div>
+        <button (click)="ofOperator()">Of</button>
+        @for(info of ofOutput;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "from"){
+    <div class="container">
+        <div class="label">Takes Array of any as Inputs and loop one by one</div>
+        <button (click)="fromOperator()">From</button>
+        @for(info of fromOutput;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "range"){
+    <div class="container">
+        <div class="label">Range is use to get range example:<ul>
+                <li>If input is 10 it will give 0 to 9</li>
+                <li>If input is 5, 10 it will give 5 to 14</li>
+            </ul>
+        </div>
+        <button (click)="rangeOperator()">Range</button>
+        @for(info of rangeOutput;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "interval"){
+    <div class="container">
+        <div class="label">Interval is use to excute the method at certain interval
+        </div>
+        <button (click)="intervalOperator()">Interval</button>
+        @for(info of intervalOutput;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "map"){
+    <div class="container">
+        <div class="label">Map is use to modifi/update the elements inside the array and returns array
+        </div>
+        <button (click)="mapOperator()">Map</button>
+        @for(info of mappedArray;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "filter"){
+    <div class="container">
+        <div class="label">FIlter is use to filter the array and return array</div>
+        <button (click)="filterOperator(filter.value)">Filter</button>
+        <input type="text" #filter placeholder="search">
+        <div class="info-container">
+            <div>
+                <div>Default</div>
+
+                @for(info of defaultArray;track info){
+                <div>{{info}}</div>
+                }
+            </div>
+            <div>
+                <div>Filter</div>
+                @for(info of filterArray;track info){
+                <div>{{info}}</div>
+                }
+            </div>
+        </div>
+    </div>
+}@if(selectedRxjs == "find"){
+    <div class="container">
+        <div class="label">Find is used to find the element inside the array and return first match element.</div>
+        <button (click)="findOperator(find.value)">Filter</button>
+        <input type="text" #find placeholder="search">
+        <div class="info-container">
+            <div>
+                <div>Default</div>
+
+                @for(info of defaultArray;track info){
+                <div>{{info}}</div>
+                }
+            </div>
+            <div>
+                <div>Find</div>
+
+                <div>{{findInfo}}</div>
+
+            </div>
+        </div>
+
+    </div>
+}@if(selectedRxjs == "reduce"){
+    <div class="container">
+        <div class="label">Reduce is use to merge the array and return single value</div>
+        <button (click)="reduceOperator()">Reduce</button>
+        <div>{{reduceValue}}</div>
+    </div>
+    }@if(selectedRxjs == "contact"){
+    <div class="container">
+        <div class="label">Contact is use to merge the arrays and return array</div>
+        <button (click)="contactOperator()">Contact</button>
+        @for(info of contactValue;track info){
+        <div>{{info}}</div>
+        }
+    </div>
+}@if(selectedRxjs == "switchMap"){
+    <div class="container">
+        <div class="label">SwitchMap is use to cancel the previous call and initiate the new call. Mainly use in
+            search</div>
+        <button>SwitchMap</button>&nbsp;
+        <input type="text" [formControl]="search" placeholder="search">
+        @for(data of switchFilterValue;track data){
+        <div>{{data.firstName}} {{data.lastName}}</div>
+
+        }
+    </div>
+}@if(selectedRxjs == "debounce"){
+    <div class="container">
+        <div class="label">Debounce is use to hold the function for given interval to run</div>
+        <button>Debounce</button>&nbsp;
+        <input type="text" [formControl]="debounceValue" placeholder="search">
+        @for(data of debounceFilterValue;track data){
+        <div>{{data.firstName}} {{data.lastName}}</div>
+        }
+    </div>
+}
+</div>

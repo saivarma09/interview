@@ -1,0 +1,69 @@
+<h1>View Child vs View Children</h1>
+<div class="container">
+    <div>
+        <h1>View Child</h1>
+        <ul>
+            <li>It is used to access DOM elements it will refer to the first element</li>
+        </ul>
+        <h3>Example: </h3>
+    </div>
+    <div>
+        <h1>View Children</h1>
+        <ul>
+            <li>It will accesss all the elements which are matching criteria</li>
+        </ul>
+        <h3>Example: </h3>
+    </div>
+</div>
+<h1>View Content vs View Container vs ng Template</h1>
+<div class="container">
+    <div>
+        <h1>View Content</h1>
+        <ul>
+            <li>ng content is used to access parent component element which are inside the tag can be access in the child component</li>
+        </ul>
+        <h3>Example: </h3>
+    </div>
+    <div>
+        <h1>ng container</h1>
+        <ul>
+            <li>ng conatiner will not insert in the DOM</li>
+        </ul>
+        <h3>Example: </h3>
+    </div>
+    <div>
+        <h1>ng template</h1>
+        <ul>
+            <li>ng template can be use using structal directives like ngIF or else block</li>
+        </ul>
+        <h3>Example: </h3>
+    </div>
+</div>
+<h1>Async Pipe</h1>
+<div class="container">
+    <div>
+        <li>Async pipe is used to get the data from the observal or promise in the HTML.</li>
+    </div>
+</div>
+<h1>Pipes</h1>
+<div>
+    <li>Pipe are function that transform data before it is displayed to the USer</li>
+    <li>There are two type of pipes</li>
+</div>
+<div class="container">
+    <div>
+        <h1>Pure</h1>
+        <ul>
+            <li>Pure pipe will call on params change</li>
+        </ul>
+        <h3>Example: Currency, JSON, LowerCase, UpperCase</h3>
+    </div>
+    <div>
+        <h1>Impure</h1>
+        <ul>
+            <li>Impure pipe will call on every change</li>
+            <li>By default angular will create pure pipes to impure we need to add pure:false</li>
+        </ul>
+
+    </div>
+</div>

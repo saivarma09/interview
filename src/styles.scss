@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 button{
-    padding: 4px;
-    background-color: black;
-    color: white;
+    padding: 8px;
+    background-color: plum;
+    color: black;
     border-radius: 8px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+
+input{
+    border: 1px solid #e8e8e8;
+    padding: 8px;
 }
