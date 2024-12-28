@@ -1,3 +1,10 @@
-
-
-<router-outlet />
+<div class="container">
+    <div class="right-content">
+        <ul>
+        @for(list of listed;track list){
+            <li [routerLink]="list.route" [ngStyle]="(router.url === list.route) ? {'background-color': 'skyblue'}:{'background-color': 'white'}" >{{list.title}}</li>
+        }
+    </ul>
+    </div>
+    <div class="left-content"><router-outlet /></div>
+</div>

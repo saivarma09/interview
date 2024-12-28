@@ -6,7 +6,8 @@ import { EncapsulationChild2Component } from './encapsulation-child-2/encapsulat
   selector: 'app-encapsulation',
   imports: [EncapsulationChild1Component,EncapsulationChild2Component],
   templateUrl: './encapsulation.component.html',
-  styleUrl: './encapsulation.component.scss'
+  styleUrl: './encapsulation.component.scss',
+  encapsulation:ViewEncapsulation.Emulated
 })
 export class EncapsulationComponent {
 

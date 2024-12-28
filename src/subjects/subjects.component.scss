@@ -1,0 +1,25 @@
+.container{
+border: 1px solid #e8e8e8;
+padding: 16px;
+width: 33%;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+justify-content: center;
+}
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+.output{
+    margin-top: 16px;
+}
+
+.info{
+    margin-bottom: 16px;
+    font-size: 26px;
+}

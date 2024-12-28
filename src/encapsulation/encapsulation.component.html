@@ -1,5 +1,25 @@
 
-<button>Parent</button>
+<h1>Encapsulation</h1>
+<div class="label">Allows Limiting the scope of css styles to individual components and their views</div>
+&nbsp;
+<div class="label">None: All the component css apply to the application</div>
+&nbsp;
+<div class="label">Emulated:Emulate will not make any chages.</div>
+&nbsp;
+<div class="label">Shadow DOM: All the componets css will added to all the html element inside the component.</div>
 
-<app-encapsulation-child-1></app-encapsulation-child-1>
-<app-encapsulation-child-2></app-encapsulation-child-2>
+&nbsp;
+<div class="main-container-info">
+<div class="container">
+    <button>Parent</button>
+    <div>Emulate</div>
+</div>
+<div class="main-container">
+<div class="container">
+    <app-encapsulation-child-1></app-encapsulation-child-1>
+</div>
+<div class="container">
+    <app-encapsulation-child-2></app-encapsulation-child-2>
+</div>
+</div>
+</div>

@@ -7,7 +7,7 @@ import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
   imports: [JsonPipe],
   templateUrl: './subjects.component.html',
   styleUrl: './subjects.component.scss',
-  encapsulation: ViewEncapsulation.ShadowDom
+
 })
 export class SubjectsComponent {
   data: any = [];

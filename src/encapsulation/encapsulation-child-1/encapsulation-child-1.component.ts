@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   imports: [],
   templateUrl: './encapsulation-child-1.component.html',
   styleUrl: './encapsulation-child-1.component.scss',
-  encapsulation:ViewEncapsulation.Emulated
+  // encapsulation:ViewEncapsulation.Emulated
 })
 export class EncapsulationChild1Component {
 

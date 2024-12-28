@@ -1,10 +1,29 @@
-<div>
-{{data | json}}
-<button (click)="emitInfo()">emit</button>
-<button (click)="getData()">subject</button></div>
-<div>{{behaviorData | json}}
-<button (click)="emitBhInfo()"> Emit Behavior subject</button>
-<button (click)="getBehaviorData()">Behavior subject</button></div>
-<div>{{RData | json}}
-<button (click)="emitRInfo()"> Emit Replay subject</button>
-<button (click)="getRData()">Replay subject</button></div>
+<div class="main-container">
+    <div class="container">
+        <h1>Subject</h1>
+        <div class="info">Subject wont have initial value and once subscribe we will get value and once value emit completed we wont get any value</div>
+        <div class="btn-group">
+            <button (click)="emitInfo()">emit</button>
+            <button (click)="getData()">subject</button>
+        </div>
+        <div class="output">Output: {{data | json}}</div>
+    </div>
+    <div class="container">
+        <h1>Behavior subject</h1>
+        <div class="info">Behavior subject has initate value and store the last value and emit every subscribe</div>
+        <div class="btn-group">
+            <button (click)="emitBhInfo()"> Emit Behavior subject</button>
+            <button (click)="getBehaviorData()">Behavior subject</button>
+        </div>
+        <div class="output">Output: {{behaviorData | json}}</div>
+    </div>
+    <div class="container">
+        <h1>Replay subject</h1>
+        <div class="info">Replay subject is used to get thhe old value and new value and we can specifi the store</div>
+        <div class="btn-group">
+            <button (click)="emitRInfo()"> Emit Replay subject</button>
+            <button (click)="getRData()">Replay subject</button>
+        </div>
+        <div class="output">Output: {{RData | json}}</div>
+    </div>
+</div>
