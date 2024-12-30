@@ -1,0 +1,14 @@
+<p>Parent route</p>
+
+
+<button (click)="activateChild()">activateChild</button>
+<button (click)="deactiveChild()">deactivate</button>
+
+<router-outlet></router-outlet>
+
+<h1><b>CanActivate</b> - protect rendering a component</h1>
+<h1><b>CanActivateChild</b> - protect rendering a child component</h1>
+<h1><b>CanDeactivate</b> - prevent from moving out of route</h1>
+<h1><b>CanLoad</b> - prevent loading a lazy loading module. Can Load replace with CanMatch</h1>
+<h1><b>CanMatch</b> - It is used to check router with same name to load on the condition</h1>
+<h1><b>Resolve</b> - fetch data before changing route</h1>

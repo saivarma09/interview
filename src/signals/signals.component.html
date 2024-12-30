@@ -1,0 +1,28 @@
+<h1>Granularly tracks how and where your state is used throughout an application</h1>
+
+<ul>
+    <li><b>Writable Signals:</b>Writable signals are allowed to store the data or modifie thhe data directly</li>
+    <li><b>Computed Signals:</b>Computed signals are readonly signals and computed signals are depend on the peer signals</li>
+    <li><b>Effects:</b>effect will trigger if any signal is updated or change</li>
+</ul>
+
+
+ <h2>Writable Signals can update using set or update</h2>
+
+ <h2>
+   example : count = signal(0)
+   <div> if we use count = {{count}}</div>
+   <div> if we use count() = {{count()}}</div>
+   <button (click)="updateSignal()">Count increase  this.count.set(this.count()+1)</button>
+   <div> array arr() = {{arr()}}</div>
+   <button (click)="updateArray()">update Array    this.arr.update(value => [...value,this.count()])</button>
+ </h2>
+
+
+ <h2>
+    Computed Signals
+ </h2>
+
+ <h2>
+    Example: {{comCount()}}
+ </h2>

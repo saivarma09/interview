@@ -15,7 +15,8 @@ export class AppComponent {
     {title:'Encapsulation',route:'/encapsulation'},
     {title:'Observale-promise',route:'/observalPromise'},
     {title:'RXJS',route:'/rxjs'},
-    {title:'Subjects',route:'/subjects'}
+    {title:'Subjects',route:'/subjects'},
+    {title:'Guards',route:'/guards'}
   ];
   constructor(public router:Router){}
 }
