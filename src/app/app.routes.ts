@@ -13,6 +13,7 @@ import { canDeactivateGuard } from '../guards/guards-types/can-deactive/can-deac
 import { Component } from '@angular/core';
 import { SignalsComponent } from '../signals/signals.component';
 import { JavaScriptComponent } from '../java-script/java-script.component';
+import { LifeCycleHooksComponent } from '../life-cycle-hooks/life-cycle-hooks.component';
 
 export const routes: Routes = [
     {path:'', redirectTo:'angular', pathMatch:"full"},
@@ -27,4 +28,5 @@ export const routes: Routes = [
     ]},
     {path:"signal", component:SignalsComponent},
     {path:"java-script", component:JavaScriptComponent},
+    {path:"life-cycle", component:LifeCycleHooksComponent},
 ];
