@@ -1,3 +1,117 @@
+<div class="container">
+    <div>
+        <h1>Angular Flow
+        </h1>
+        <ul>
+            <li>Index.html ---> main.ts ---> app.module ---> app.component ---> app-root </li>
+
+        </ul>
+    </div>
+</div>
+<div>
+    <h1>Directives
+    </h1>
+    <ul>
+        <li>Directives are used to change the structure style or behaviour of the DOM element</li>
+        <ul>
+            <li>Structual Directive:- Ngif, NgFor, NgSwitch</li>
+            <li>Attribute Directive:- Ngclass, NgModel, NgStyle</li>
+            <li>Custom Directive:- &#64;Directive(&#123;
+                standalone: true,
+                selector: '[appHighlight]'&#125;)
+            </li>
+        </ul>
+    </ul>
+</div>
+
+
+<div class="container">
+    <div>
+        <h1>Service
+        </h1>
+        <ul>
+            <li>Typescript class used for sharing data or functionality</li>
+            <li>No need to specify behaviour</li>
+            <li>Need to provide in service</li>
+            <li>Need to provide in service</li>
+            <li>Code reuse</li>
+            <li>data sharing between components</li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Decorators
+        </h1>
+        <ul>
+            <li>In Angular, decorators are functions that are used to modify the behavior of classes and their members.
+            </li>
+            <li>Decorators are start with &#64;</li>
+            <ul>
+                <li>&#64;Input()</li>
+                <li>&#64;Output()</li>
+                <li>&#64;ViewChild()</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Lazy loading
+        </h1>
+        <ul>
+            <li>Lazy loading is a strategy used to optimize the loading time of an Angular application by loading
+                modules only when they are required. </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Browser Module
+        </h1>
+        <ul>
+            <li>It is used to run your application in browser, It includes binding, rendering and event handling</li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Data Sharing
+        </h1>
+        <ul>
+            <li>&#64;Input() is used to transfer data from parent to child</li>
+            <li>&#64;Output() is used to transfer data from child to parent</li>
+            <li>&#64;ViewChild() is used to get data from child to parent</li>
+            <li>Subject and BehaviorSubject is used if there is no relation between the components</li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Local Storage
+        </h1>
+        <ul>
+            <li>Local storage store data in the client side</li>
+            <li>localStorage.setItem('','') to store the data</li>
+            <li> localStorage.getItem('') to get the stored data</li>
+            <li> localStorage.clear() to clear </li>
+
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Session Storage
+        </h1>
+        <ul>
+            <li>That allows temporarily store information in the user's browser, session store will clear if browser
+                reload or closed</li>
+            <li>sessionStorage.clear() to clear</li>
+            <li>sessionStorage.setItem('installAppMsg','installed') to store</li>
+            <li>sessionStorage.getItem('') to get stored data</li>
+        </ul>
+    </div>
+</div>
 <h1>View Child vs View Children</h1>
 <div class="container">
     <div>
@@ -20,7 +134,8 @@
     <div>
         <h1>View Content</h1>
         <ul>
-            <li>ng content is used to access parent component element which are inside the tag can be access in the child component</li>
+            <li>ng content is used to access parent component element which are inside the tag can be access in the
+                child component</li>
         </ul>
         <h3>Example: </h3>
     </div>
@@ -65,5 +180,14 @@
             <li>By default angular will create pure pipes to impure we need to add pure:false</li>
         </ul>
 
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h1>Injectable
+        </h1>
+        <ul>
+            <li>Injectable that marks a class as available to be provided and injected as a dependency.</li>
+        </ul>
     </div>
 </div>

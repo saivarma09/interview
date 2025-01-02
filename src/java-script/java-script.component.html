@@ -1,0 +1,169 @@
+<h1>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS.</h1>
+
+<h1>Data type</h1>
+<ul>
+    <li>Primative Type
+        <ul>
+            <li>String = '' or ""</li>
+            <li>Number = 0 to 9</li>
+            <li>Null = null</li>
+            <li>Undefine = undefine</li>
+            <li>Boolean = true or false</li>
+        </ul>
+    </li>
+    <li>Non-Primative Data Types
+        <ul>
+            <li>Objects</li>
+            <li>Arrays = []</li>
+        </ul>
+    </li>
+</ul>
+<h1>Type of Variables</h1>
+<h1>
+    In JavaScript, we use var, let, and const to create variables
+</h1>
+<div>
+    <b>Var :- </b>
+    If we create a variable outside of a function, we can use it anywhere in code.
+    If we create a variable inside a function, we can only use it within that function.
+    we can re-declare a variable
+</div>
+<div>
+    <b>Let :-</b>
+    The variable is only available inside the block where we define it.Let variables are re-declared in the same scope.
+</div>
+<div>
+    <b>Const:-</b>
+    const is similar to let, but with one big difference: once we assign a value to a const variable, we cant change it
+    later. Like let, const is block-scoped.
+</div>
+
+<h1>There are different type of functions</h1>
+
+<h1>Anomouis Function:- function which dont have name, the function assigned to a variable</h1>
+<div>
+    Example:- <br>
+    let mult = function (x,y) <br>
+    return x*y <br>
+    console.log(mult(1,2))
+</div>
+
+<h1>Named function which are commonly used</h1>
+<div>
+    Example:- <br>
+    function mult(x,y) <br>
+    return x*y <br>
+    console.log(mult(1,2))
+</div>
+
+<h1>Arrow functions also called as fat arrow functions which are directly return the value without return key</h1>
+<div>
+    Example:- <br>
+    function mult = (x,y) => x*y;
+    <br>
+    console.log(mult(1,2))
+</div>
+
+
+<h1>Declaration Output</h1>
+
+<h1>String</h1>
+<div>'a'+undefined = aundefined</div>
+<div>'a'+null = anull</div>
+<div>'a'+ 5 = a5</div>
+<div>'a'+ true = atrue</div>
+
+<h1>Number</h1>
+<div>5+undefine = NaN</div>
+<div>5+null/false = 5</div>
+<div>5 + true = 6</div>
+
+<h1>Boolean</h1>
+<div>false = 0</div>
+<div>true = 1</div>
+<div>true = true</div>
+<div>false = false</div>
+
+<h1>Closures</h1>
+
+<div>A function inside the parent function to avoid variable destroy or private variable it also take the updated value
+</div>
+<div>Example:</div>
+<div>
+    function add(num) <br>
+    let a = 5; <br>
+    function square(num) <br>
+    return a+num <br>
+
+    return square(num) <br>
+
+    const result = add(5) <br>
+    console.log(result)
+</div>
+
+<h1>Hosting</h1>
+
+<div>All the functions move to top before running</div>
+
+<div>Example:- </div>
+<div>console.log(test(5))
+    <br>
+    function test(num)<br>
+    return num * num
+    <br>
+</div>
+
+
+<h1>Call Back Function</h1>
+
+<div>Passing function to the parent function as argument</div>
+
+<div>Example:- </div>
+<div>function square(num)<br>
+    return num * num<br>
+function addNumber(num)<br>
+    return num + num<br>
+console.log(square(addNumber(5)))
+</div>
+
+<h1>Synchronous</h1>
+
+<div>Run code line by line</div>
+
+<h1>Asynchronous</h1>
+
+<div>Run code parallely</div>
+
+<h1>Spread Operator</h1>
+
+<div>Spread Operator is used to merge the object/Arrays, and we use spread operator for deep copy</div>
+
+<div>Exapmle :-
+    <br>let a = [1]<br>
+    let b = [2]<br>
+    let c = [...a,...b]
+</div>
+
+<div>Exapmle :-
+    <br>let a = &#123;name:'sai'&#125;<br>
+    
+    let b = &#123;...a&#125;
+</div>
+
+<h1>Rest Operator</h1>
+
+<div> In functions when we require to pass arguments but were not sure how many we have to pass, the rest parameter makes it easier. it convert the arguments into arry</div>
+<br>
+<div>Exapmle :-
+<br>
+    function add(...args)&#123;<br>
+        let b = 0<br>
+    for(let a of args)&#123;<br>
+        b += a<br>
+    &#125;<br>
+    console.log(b)<br>
+    &#125;<br>
+    
+    add(1,2,3)<br>
+</div>
+

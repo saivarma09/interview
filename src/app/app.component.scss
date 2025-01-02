@@ -15,8 +15,12 @@ ul{
 
 .right-content{
     border-right: 1px solid #e8e8e8;
+    position: fixed;
+    
 }
 
 .left-content{
     padding-left: 16px;
+    margin-left: 200px;
+    overflow: auto;
 }

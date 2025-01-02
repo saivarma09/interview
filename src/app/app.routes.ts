@@ -12,16 +12,19 @@ import { canActivateChildGuard } from '../guards/guards-types/can-active-child/c
 import { canDeactivateGuard } from '../guards/guards-types/can-deactive/can-deactivate.guard';
 import { Component } from '@angular/core';
 import { SignalsComponent } from '../signals/signals.component';
+import { JavaScriptComponent } from '../java-script/java-script.component';
 
 export const routes: Routes = [
+    {path:'', redirectTo:'angular', pathMatch:"full"},
     {path:'encapsulation', component:EncapsulationComponent},
     {path:'subjects', component:SubjectsComponent},
     {path:'rxjs', component:RxjsComponent},
     {path:'observalPromise', component:ObservablePromiseComponent},
-    {path:'dom', component:DomComponent},
+    {path:'angular', component:DomComponent},
     {path:'guards', component:GuardsComponent, canActivate:[canActivateGuard], canActivateChild:[canActivateChildGuard] ,children:[
         {path:'guards-child', component:GuardChildComponent, canDeactivate:[canDeactivateGuard]},
         {path:'guards-child-1', component:GuardChild1Component},
     ]},
-    {path:"signal", component:SignalsComponent}
+    {path:"signal", component:SignalsComponent},
+    {path:"java-script", component:JavaScriptComponent},
 ];
