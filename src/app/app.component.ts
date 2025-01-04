@@ -20,6 +20,7 @@ export class AppComponent {
     {title:'Signal',route:'/signal'},
     {title:'Java Script',route:'/java-script'},
     {title:'Life Cycle',route:'/life-cycle'},
+    {title:'Create',route:'/create'},
   ];
   constructor(public router:Router){}
 }

@@ -1,0 +1,85 @@
+<div class="main-container">
+    <div>
+        <h1>Pipe</h1>
+        <h2>
+            &#64;pipe(&#123; <br>
+            name:'pipeName'
+            &#125;)
+            <br>
+            <br>
+            export class TestPipe implements PipeTransform&#123;
+            <br>
+            <br>
+            transform(value: unknown, ...args: unknown[]): unknown &#123;<br>
+            <br>
+            return null;<br>
+            <br>
+            &#125;
+            &#125;
+        </h2>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <h1>Directive</h1>
+        <h2>
+            &#64;directive(&#123; <br>
+            selector:'[directiveName]'
+            &#125;)
+            <br>
+            <br>
+            export class directiveName implements onInit&#123;
+            <br>
+            <br>
+            ngonInit(value: unknown, ...args: unknown[]): unknown &#123;<br>
+            <br>
+            return null;<br>
+            <br>
+            &#125;
+            &#125;
+        </h2>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <h1>Component</h1>
+        <h2>
+            &#64;component(&#123; <br>
+            selector:'app-component-name',<br>
+            imports: [],<br>
+            templateUrl: './create.component.html',<br>
+            styleUrl: './create.component.scss'<br>
+            &#125;)
+            <br>
+            <br>
+            export class componentName implements onInit&#123;
+            <br>
+            <br>
+            ngonInit(value: unknown, ...args: unknown[]): unknown &#123;<br>
+            <br>
+            return null;<br>
+            <br>
+            &#125;
+            &#125;
+        </h2>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <h1>Service</h1>
+        <h2>
+            &#64;Injectable(&#123; <br>
+            providedIn:'root',
+            &#125;)
+            <br>
+            export class serviceName&#123;
+            <br>
+            <br>
+            &#125;
+        </h2>
+    </div>
+</div>
+
