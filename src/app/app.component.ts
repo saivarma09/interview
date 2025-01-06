@@ -21,6 +21,7 @@ export class AppComponent {
     {title:'Java Script',route:'/java-script'},
     {title:'Life Cycle',route:'/life-cycle'},
     {title:'Create',route:'/create'},
+    {title:'HTML',route:'/HTML'},
   ];
   constructor(public router:Router){}
 }
