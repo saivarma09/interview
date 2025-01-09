@@ -22,6 +22,7 @@ export class AppComponent {
     {title:'Life Cycle',route:'/life-cycle'},
     {title:'Create',route:'/create'},
     {title:'HTML',route:'/HTML'},
+    {title:'JS Example',route:'/jsexample'},
   ];
   constructor(public router:Router){}
 }
