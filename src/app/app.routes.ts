@@ -16,6 +16,7 @@ import { JavaScriptComponent } from '../java-script/java-script.component';
 import { LifeCycleHooksComponent } from '../life-cycle-hooks/life-cycle-hooks.component';
 import { CreateComponent } from '../create/create.component';
 import { HtmlComponent } from '../html/html.component';
+import { JsExampleComponent } from '../js-example/js-example.component';
 
 export const routes: Routes = [
     {path:'', redirectTo:'angular', pathMatch:"full"},
@@ -33,4 +34,5 @@ export const routes: Routes = [
     {path:"life-cycle", component:LifeCycleHooksComponent},
     {path:'create', component:CreateComponent},
     {path:'HTML', component:HtmlComponent},
+    {path:'jsexample', component:JsExampleComponent},
 ];
